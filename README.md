@@ -34,7 +34,8 @@ MATLAB-Practice-Problems/
 └── README.md
 ```
 
-Each folder contains a MATLAB script that solves the corresponding problem. Below is a brief description of each problem:
+Each folder contains a MATLAB script that solves the corresponding problem.
+
 They are ordered according to difficulty, so anyone can start from 01 and move up while learning.
 
 ## How to Use
