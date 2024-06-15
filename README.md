@@ -30,6 +30,10 @@ MATLAB-Practice-Problems/
 ├── 19. Caesar cypher/
 ├── 20. Sparse Matrix/
 ├── 21. Excel File I/
+├── 22. Character Counter/
+├── 23. Saddle Points/
+├── 24. Image Blur/
+├── 25. Echo Generator/
 ├── .git/
 └── README.md
 ```
