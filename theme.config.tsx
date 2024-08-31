@@ -15,7 +15,7 @@ const logo = (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <image href='/images/logo.webp'/>
+    <image href='/images/logo.webp' width="100" height="100" />
   </svg>
 )
 
@@ -23,7 +23,7 @@ const config = {
   project: {
     link: 'https://github.com/Ashfinn/matlab-hero'
   },
-  docsRepositoryBase: 'https://github.com/Ashfinn/matlab-hero/docs',
+  docsRepositoryBase: 'https://github.com/Ashfinn/matlab-hero/tree/main/docs',
   useNextSeoProps() {
     const { asPath } = useRouter()
     if (asPath !== '/') {
@@ -31,20 +31,26 @@ const config = {
         titleTemplate: '%s – Matlab Hero'
       }
     }
+    return {
+      titleTemplate: 'Matlab Hero – %s'
+    }
   },
   logo,
   head: function useHead() {
     const { title } = useConfig()
     const socialCard = title
-      ? `https://example.com/api/og?title=${title}`
-      : 'https://example.com/og.png'
+      ? `https://matlab-hero.com/api/og?title=${encodeURIComponent(title)}`
+      : 'https://matlab-hero.com/images/og.png'
 
     return (
       <>
-        <meta name="description" content="My Documentation Site" />
+        <meta name="description" content="Matlab Hero: The Ultimate Guide to MATLAB Programming" />
         <meta property="og:title" content={title ? title + ' – Matlab Hero' : 'Matlab Hero'} />
         <meta property="og:image" content={socialCard} />
-        <link rel="icon" href="/logo.svg" />
+        <meta property="og:description" content="Learn MATLAB programming with step-by-step tutorials, projects, and tips." />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content={socialCard} />
+        <link rel="icon" href="/images/logo.svg" />
       </>
     )
   },
@@ -52,7 +58,7 @@ const config = {
     text: 'Edit this page on GitHub →'
   },
   feedback: {
-    content: 'Have questions? Provide feedback →',
+    content: 'Have questions or feedback? Reach out to us →',
     labels: 'feedback'
   },
   sidebar: {
@@ -68,7 +74,10 @@ const config = {
   footer: {
     text: (
       <div className="flex flex-col items-center">
-        <p className="text-sm">© {new Date().getFullYear()} Matlab Hero.</p>
+        <p className="text-sm">© {new Date().getFullYear()} Matlab Hero. All rights reserved.</p>
+        <a href="https://github.com/Ashfinn/matlab-hero" className="text-blue-500 hover:underline">
+          Contribute on GitHub
+        </a>
       </div>
     )
   },

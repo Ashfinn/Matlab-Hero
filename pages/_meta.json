@@ -1,8 +1,7 @@
 {
+  "*" :{
+    "type" : "page" 
+  },
   "index": "Home",
-  "contact": "Contact",
-  "github_link": {
-    "title": "Ashfin",
-    "href": "https://github.com/Ashfinn"
-  }
+  "Practice-Problems": "Practice Problems"
 }
