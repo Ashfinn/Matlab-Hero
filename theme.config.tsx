@@ -15,8 +15,7 @@ const logo = (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <circle cx="50" cy="50" r="50" fill="#3498db" />
-    <text x="50" y="55" textAnchor="middle" fill="#fff" fontSize="24" fontWeight="bold">Logo</text>
+    <image href='/images/logo.webp'/>
   </svg>
 )
 
@@ -45,7 +44,7 @@ const config = {
         <meta name="description" content="My Documentation Site" />
         <meta property="og:title" content={title ? title + ' – Matlab Hero' : 'Matlab Hero'} />
         <meta property="og:image" content={socialCard} />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.svg" />
       </>
     )
   },

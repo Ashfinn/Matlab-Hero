@@ -1,7 +1,4 @@
 {
-  "*": {
-    "type": "page"
-  },
   "index": "Home",
   "contact": "Contact",
   "github_link": {
