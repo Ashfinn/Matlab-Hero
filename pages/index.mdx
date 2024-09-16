@@ -1,15 +1,19 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 # Welcome to Matlab Hero
-
+---
+<Image src="/images/logo.png" height={200} width={200} />
 Your ultimate resource for mastering **MATLAB programming**. Learn by examples, practice with exercises, and build projects to enhance your skills.
 
+
 <div className="my-8 text-center">
-  <Link href="/tutorials">
+  <Link href="/Practice-Problems/A-Simple-Function/readme">
     <div className="bg-blue-800 text-white px-6 py-3 rounded-lg text-lg hover:bg-blue-700 transition duration-300">
-      Get Started with Tutorials
+      `Get Started with Tutorials`
     </div>
   </Link>
+  
 </div>
 
 ## What You'll Find Here
@@ -19,17 +23,11 @@ Your ultimate resource for mastering **MATLAB programming**. Learn by examples, 
 - **Project Ideas**: Get inspired with MATLAB project ideas to showcase your skills.
 - **Community Support**: Join a community of MATLAB learners and share your knowledge.
 
-## Featured Tutorials
-
-- [Introduction to MATLAB Basics](./tutorials/matlab-basics)
-- [Working with Matrices](./tutorials/working-with-matrices)
-- [Data Visualization in MATLAB](./tutorials/data-visualization)
-- [Advanced Scripting Techniques](./tutorials/advanced-scripting)
 
 <div className="my-8 text-center">
-  <Link href="/tutorials">
+  <Link href="/Practice-Problems/A-Simple-Function/readme">
     <div className="bg-blue-800 text-white px-6 py-3 rounded-lg text-lg hover:bg-blue-700 transition duration-300">
-      Explore All Tutorials
+      `Explore All Tutorials`
     </div>
   </Link>
 </div>
@@ -41,12 +39,3 @@ Matlab Hero is designed to be your go-to resource for all things MATLAB. Whether
 - **Learn at Your Own Pace**: Our tutorials are easy to follow, allowing you to learn MATLAB at your own speed.
 - **Real-world Examples**: We provide practical examples that you can use in your work or studies.
 - **Stay Updated**: Our content is regularly updated to reflect the latest MATLAB features and best practices.
-
----
-
-<footer className="text-center mt-12">
-  <p>© {new Date().getFullYear()} Matlab Hero. All rights reserved.</p>
-  <Link href="/about">
-    <div className="text-blue-500 hover:underline">About Us</div>
-  </Link>
-</footer>
